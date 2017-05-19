@@ -3,6 +3,7 @@
 # Copyright (C) 2009  Marcus Wanner, Paulo Vieira, rhn
 # Copyright (C) 2010  rhn, Marcus Wanner, melducky, Samuel Leeman-Munk
 # Copyright (C) 2011  jerradgenson, Marcus Wanner
+# Copyright (C) 2016  Nikola Jovic
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -613,7 +614,7 @@ MotorCon.add_compatible_sensor(None, 'HiTechnc', 'MotorCon')
 
 
 class Angle(BaseDigitalSensor):
-#HiTechnic Angle Sensor, Nikola Jovic 2016
+#HiTechnic Angle Sensor
     I2C_ADDRESS = BaseDigitalSensor.I2C_ADDRESS.copy()
     I2C_ADDRESS.update({
         'mode': (0x41, 'B'),
